@@ -61,3 +61,5 @@ will add
 * Is this unique to Defcon and the many security conferences happening that week in vegas or would activities like the drive by captures I experienced still occur regardless of the conferences?
 * Wouldn't it be nice if we could tell people defcon was the safest time to use your equipement in vegas thanks to all the hackers of the world?
 * Certainly a burner phone was worth it but what about the thousands of innocent regular people in the area that week?
+* Impact of GPS accuracy?
+* Could Towers be rotating or changing device ID's resulting in duplicate entries?
