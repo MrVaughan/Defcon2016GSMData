@@ -14,7 +14,7 @@ Before Defcon I made multiple walks of Paris and Bally's to get a baseline list 
 more to add
 
 ##Data
-All data is available in the BaseTransceiverStation.csv file.
+All data is available in the BaseTransceiverStation.csv file. Feel free to slip this over to an open map interface for me. Bonus points if you can plot my travel path.
 
 ##Observations
 
