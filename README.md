@@ -1,11 +1,11 @@
-# Defcon2016CDMAData
-All CDMA data I collected while in Vegas at Defcon 2016
+# Defcon 2016 GSM Data
+All GSM data I collected while in Vegas at Defcon 2016. As a correction it was pointed out to me that the network I was connected to was GSM (AT&T) not CDMA . Originally I thought the phone I had was CDMA only which is why I said it was CDMA but in reality all the data is GSM.
 
 ##Overview
-I was in Las Vegas from July 31st to August 7th 2016. During that time I spent 4 nights before Defcon in the Augustus Tower at Ceasars Palace (it was nice) and the following 3 nights at the Paris Hotel. Throughout the week I spent a lot of time walking around all areas of vegas while collecting CDMA cell tower data using Android IMSI Catcher Detector (AIMSICD) App. https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki   
+I was in Las Vegas from July 31st to August 7th 2016. During that time I spent 4 nights before Defcon in the Augustus Tower at Ceasars Palace (it was nice) and the following 3 nights at the Paris Hotel. Throughout the week I spent a lot of time walking around all areas of vegas while collecting GSM cell tower data using Android IMSI Catcher Detector (AIMSICD) App. https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki   
 
 ##Disclaimer
-Admitadely this was a small experiment to test my curiousity and attempt to get meaningfull data to confirm or deny the hostility of the cellular networks during Defcon. Although I have done a lot of mobile application assessments and reverse engineered many mobile technologies this is my first foray into CDMA, FEM2Cells, IMSI Catchers, and Stingrays. There are definitely more experts in this field and people who know way more then me. There may even be reasonable explinations for some of the abnormal behaivor observed. I wanted to get the data out quickly so that more eyes could get on it and we could draw attention to the issues. I will gladly retract or refine any observations/findings as needed, for the momment all observations should be considered preliminary.
+Admitadely this was a small experiment to test my curiousity and attempt to get meaningfull data to confirm or deny the hostility of the cellular networks during Defcon. Although I have done a lot of mobile application assessments and reverse engineered many mobile technologies this is my first foray into GSM, FEM2Cells, IMSI Catchers, and Stingrays. There are definitely more experts in this field and people who know way more then me. There may even be reasonable explinations for some of the abnormal behaivor observed. I wanted to get the data out quickly so that more eyes could get on it and we could draw attention to the issues. I will gladly retract or refine any observations/findings as needed, for the momment all observations should be considered preliminary.
 
 ##Coverage
 Before Defcon I made multiple walks of Paris and Bally's to get a baseline list of the available towers in the area.I did make a trip to Blackhat for a day to check out the expo floor. In addition to many walks of the strip and my wife's love of going in all the shops, our company also did a limo tour of the strip and had a nice team dinner at Wynn. Over the course of the week minus some occassions where the app crashed I feel I have pretty reasonable coverage of most of the vegas strip.
@@ -28,7 +28,7 @@ The image shows the towers captured during preliminary war walks of Paris and Ba
 
 ###Paris and Bally's Post Defcon
 
-Once I checked into Paris I continued to collect data throughout Defcon. The observations show significant increase in the number of towers in there area. There are a couple potential 'reasonable' explanations (like maybe there are towers on multiple floors throughout the building) but at the least I think it is reasonable to conclude that there were at least a few malicious CDMA devices at the conference.
+Once I checked into Paris I continued to collect data throughout Defcon. The observations show significant increase in the number of towers in there area. There are a couple potential 'reasonable' explanations (like maybe there are towers on multiple floors throughout the building) but at the least I think it is reasonable to conclude that there were at least a few malicious GSM devices at the conference.
 
 This image shows towers captured between August 4th and 7th at Paris and Bally's
 
