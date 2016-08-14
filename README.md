@@ -1,4 +1,5 @@
 # Defcon 2016 GSM Data
+##WORKING DRAFT
 All GSM data I collected while in Vegas at Defcon 2016. As a correction it was pointed out to me that the network I was connected to was GSM (AT&T) not CDMA . Originally I thought the phone I had was CDMA only which is why I said it was CDMA but in reality all the data is GSM.
 
 ##Overview
@@ -6,6 +7,9 @@ I was in Las Vegas from July 31st to August 7th 2016. During that time I spent 4
 
 ##Disclaimer
 Admitadely this was a small experiment to test my curiousity and attempt to get meaningfull data to confirm or deny the hostility of the cellular networks during Defcon. Although I have done a lot of mobile application assessments and reverse engineered many mobile technologies this is my first foray into GSM, FEM2Cells, IMSI Catchers, and Stingrays. There are definitely more experts in this field and people who know way more then me. There may even be reasonable explinations for some of the abnormal behaivor observed. I wanted to get the data out quickly so that more eyes could get on it and we could draw attention to the issues. I will gladly retract or refine any observations/findings as needed, for the momment all observations should be considered preliminary.
+
+##OPENCellID
+As I continue to learn and understand the data, I've begun looking up the observed towers and Las Vegas region in OpenCellID.org I've already identified a number of GSM devices not already known to OpeCellID. One observation however is that many of the towers in my post defcon data set were already known to OpenCellID. In some locations around Las Vegas (including Paris and Bally's) there are many redundent GSM devices to continue to provide service for high traffic areas. This is not to say that there are not abnormalities (there are) it just means that more depth of coverage is needed. 
 
 ##Coverage
 Before Defcon I made multiple walks of Paris and Bally's to get a baseline list of the available towers in the area.I did make a trip to Blackhat for a day to check out the expo floor. In addition to many walks of the strip and my wife's love of going in all the shops, our company also did a limo tour of the strip and had a nice team dinner at Wynn. Over the course of the week minus some occassions where the app crashed I feel I have pretty reasonable coverage of most of the vegas strip.
@@ -46,6 +50,27 @@ I wanted to provide a sense for what mostly presumed normal data would look like
 While staying in Caesars before Defcon I was seeing all sorts of malicious activity just sitting in my room. The room was located in the Augustus Tower. This image shows all the towers that my phone picked up mostly just sitting in the room. This suggest that there were devices either driving by or flying overhead throughout the days prior to defcon (and while Blackhat and BSides Las Vegas were going on).
 
 ![](https://github.com/MrVaughan/Defcon2016CDMAData/blob/master/images/Screenshot_2016-08-09-11-28-38_Augustus%20Tower.png?raw=true)
+
+###Abnormal Tower 1
+The day I left defcon I sat on the airplane for 4 hours (with no A/C, thanks for that Air Canada). My cell phone was caught by an unusual tower. 
+
+|mobileCountryCode|mobileNetworkCode|locationAreaCode|cellId|primaryScramblingCode|timeFirst|timeLast|gpsLat|gpsLong|TimesSceneInOpencellID
+|---|---|---|---|---|---|---|---|---|---|
+|310|410|33800|92181001|2147483647|2016-08-07 21:27:16 +0000|2016-08-07 22:39:56 +0000|36.08274891|-115.1347721|77
+
+What is interesting and unusual about this device is that OpenCellID users have reported seeing this device an overwhelming ~77 times in another location over 4 miles away. What was it doing at the airport during Defcon Sunday?
+
+Here is where I found this tower:
+![](https://github.com/MrVaughan/Defcon2016GSMData/blob/master/images/WeirdTowerA.png?raw=true)
+
+Here is where OpenCellID users mostly reported seing this tower:
+![](https://github.com/MrVaughan/Defcon2016GSMData/blob/master/images/WeirdTowerA_OpenCellID.png?raw=true)
+
+Here you can see the distance between where OpenCellID users have scene the tower and the airport:
+![](https://github.com/MrVaughan/Defcon2016GSMData/blob/master/images/WeirdTowerA_Distance.png?raw=true)
+
+
+This raises a number of questions. The first obvious one: What reasonable explanation could there be for this tower to be in another location? It seems there were hundreds of towers closer then this one my phone could have connected to. Is this just a really high strength actual tower (most of the ones in the casinos are probably more like large routers) or did it move? If this is a malicous device, what companies opperate in the "home location" address of this device?
 
 ###LTS to 3G downgrade attacks
 This was happening all the time especially during my stay in the above listed Augustus Tower. More info to add.
