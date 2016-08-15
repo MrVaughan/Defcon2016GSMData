@@ -70,7 +70,7 @@ Here you can see the distance between where OpenCellID users have scene the towe
 ![](https://github.com/MrVaughan/Defcon2016GSMData/blob/master/images/WeirdTowerA_Distance.png?raw=true)
 
 
-This raises a number of questions. The first obvious one: What reasonable explanation could there be for this tower to be in another location? It seems there were hundreds of towers closer then this one my phone could have connected to. Is this just a really high strength actual tower (most of the ones in the casinos are probably more like large routers) or did it move? If this is a malicous device, what companies opperate in the "home location" address of this device?
+This raises a number of questions. The first obvious one: What reasonable explanation could there be for this tower to be in another location or for my phone to pick it up from such distance? It seems there were hundreds of towers closer then this one my phone could have connected to. Is this just a really high strength actual tower (most of the ones in the casinos are probably more like large routers) or did it move? If this is a malicous device, what companies opperate in the "home location" address of this device?
 
 ###LTS to 3G downgrade attacks
 This was happening all the time especially during my stay in the above listed Augustus Tower. More info to add.
