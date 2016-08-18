@@ -57,7 +57,7 @@ While staying in Caesars before Defcon I was seeing all sorts of malicious activ
 
 When I considered these observations with devices not known to OpenCellId the following 4 devices were revealed in the area outside my hotel room at Caesar's. This is not confirmation that there were malicous devices outside my hotel but suggests strongly that some suspicious activity was occuring. 
 
-~[](https://github.com/MrVaughan/Defcon2016GSMData/blob/master/images/Hamstermaps_Not_In_Opencellid_Caesars.png?raw=true)
+![](https://github.com/MrVaughan/Defcon2016GSMData/blob/master/images/Hamstermaps_Not_In_Opencellid_Caesars.png?raw=true)
 
 ###Abnormal Tower 1
 The day I left defcon I sat on the airplane for 4 hours (with no A/C, thanks for that Air Canada). My cell phone was caught by an unusual tower. 
