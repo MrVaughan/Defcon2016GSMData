@@ -39,6 +39,9 @@ This image shows towers captured between August 4th and 7th at Paris and Bally's
 
 ![](https://github.com/MrVaughan/Defcon2016CDMAData/blob/master/images/Screenshot_2016-08-07-14-18-58_Post%20Defcon.png?raw=true)
 
+Once I had a chance to look at the data I could determine all the devices not already known to OpenCellId. In total 51 devices were identified in Las Vegas that were not already known to OpenCellID. This is not to say that there are 51 malicious devices however it is a high non-zero number that leads to the possibility that there were malicious devices in the region. Bellow is an image of the uknown devices identified around Paris and Bally's. In total there were 14 previously unreported devices around these two hotels. 
+
+![](https://github.com/MrVaughan/Defcon2016GSMData/blob/master/images/Paris_Ballys_Unknown_Devices.png?raw=true)
 
 ###Caesar's Main floor
 
@@ -51,6 +54,10 @@ I wanted to provide a sense for what mostly presumed normal data would look like
 While staying in Caesars before Defcon I was seeing all sorts of malicious activity just sitting in my room. The room was located in the Augustus Tower. This image shows all the towers that my phone picked up mostly just sitting in the room. This suggest that there were devices either driving by or flying overhead throughout the days prior to defcon (and while Blackhat and BSides Las Vegas were going on).
 
 ![](https://github.com/MrVaughan/Defcon2016CDMAData/blob/master/images/Screenshot_2016-08-09-11-28-38_Augustus%20Tower.png?raw=true)
+
+When I considered these observations with devices not known to OpenCellId the following 4 devices were revealed in the area outside my hotel room at Caesar's. This is not confirmation that there were malicous devices outside my hotel but suggests strongly that some suspicious activity was occuring. 
+
+~[](https://github.com/MrVaughan/Defcon2016GSMData/blob/master/images/Hamstermaps_Not_In_Opencellid_Caesars.png?raw=true)
 
 ###Abnormal Tower 1
 The day I left defcon I sat on the airplane for 4 hours (with no A/C, thanks for that Air Canada). My cell phone was caught by an unusual tower. 
