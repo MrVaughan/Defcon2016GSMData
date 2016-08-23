@@ -1,12 +1,15 @@
 # Defcon 2016 GSM Data
 ##WORKING DRAFT
-All GSM data I collected while in Vegas at Defcon 2016. As a correction it was pointed out to me that the network I was connected to was GSM (AT&T) not CDMA . Originally I thought the phone I had was CDMA only which is why I said it was CDMA but in reality all the data is GSM.
+All GSM data I collected while in Vegas at Defcon 2016. 
 
 ##Overview
-I was in Las Vegas from July 31st to August 7th 2016. During that time I spent 4 nights before Defcon in the Augustus Tower at Ceasars Palace (it was nice) and the following 3 nights at the Paris Hotel. Throughout the week I spent a lot of time walking around all areas of vegas while collecting GSM cell tower data using Android IMSI Catcher Detector (AIMSICD) App. https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki   
+I was in Las Vegas from July 31st to August 7th 2016. During that time I spent 4 nights before Defcon in the Augustus Tower at Ceasars Palace (it was nice) and the following 3 nights at the Paris Hotel. Throughout the week I spent a lot of time walking around all areas of vegas while collecting GSM cell tower data using Android IMSI Catcher Detector (AIMSICD) App [https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki]. This document contains some of my observations.
 
 ##Disclaimer
 Admitadely this was a small experiment to test my curiousity and attempt to get meaningfull data to confirm or deny the hostility of the cellular networks during Defcon. Although I have done a lot of mobile application assessments and reverse engineered many mobile technologies this is my first foray into GSM, FEM2Cells, IMSI Catchers, and Stingrays. There are definitely more experts in this field and people who know way more then me. There may even be reasonable explinations for some of the abnormal behaivor observed. I wanted to get the data out quickly so that more eyes could get on it and we could draw attention to the issues. I will gladly retract or refine any observations/findings as needed, for the momment all observations should be considered preliminary.
+
+##Conclusions
+Ultimately, unless I physically located a IMSI-Catcher device by walking around and pin-pointing the excate location of such a device, attribution and confirmation of any of these devices is very difficult. This also speaks to the dangerous nature of the use of these devices in the world. Currently they are very difficult to detect and easy for unsuspecting cell phone users to get caught up in them. Based on the data collected, opensource data available through opencellid.org, and observed behaivor while in Las Vegas for Defcon it is highly probably that there were at least a few malicious devices in the area, but to prove conclusively their existance, or to say how many would be quite difficult. 
 
 ##OpenCellID
 As I continue to learn and understand the data, I've begun looking up the observed towers and Las Vegas region in OpenCellID.org I've already identified a number of GSM devices not already known to OpeCellID. One observation however is that many of the towers in my post defcon data set were already known to OpenCellID. In some locations around Las Vegas (including Paris and Bally's) there are many redundent GSM devices to continue to provide service for high traffic areas. 
@@ -19,7 +22,7 @@ Before Defcon I made multiple walks of Paris and Bally's to get a baseline list 
 more to add
 
 ##Data
-All data is available in the BaseTransceiverStation.csv file. Feel free to slip this over to an open map interface for me. Bonus points if you can plot my travel path.
+All data is available in the BaseTransceiverStation.csv file.
 
 ##Observations
 
@@ -33,7 +36,7 @@ The image shows the towers captured during preliminary war walks of Paris and Ba
 
 ###Paris and Bally's Post Defcon
 
-Once I checked into Paris I continued to collect data throughout Defcon. The observations show significant increase in the number of towers in there area. There are a couple potential 'reasonable' explanations (like maybe there are towers on multiple floors throughout the building) but at the least I think it is reasonable to conclude that there were at least a few malicious GSM devices at the conference.
+Once I checked into Paris I continued to collect data throughout Defcon. The observations show significant increase in the number of towers in there area. There are a couple potential reasonable explanations (like maybe there are towers on multiple floors throughout the building) but at the least I think it is reasonable to conclude that there were at least a few malicious GSM devices at the conference.
 
 This image shows towers captured between August 4th and 7th at Paris and Bally's
 
@@ -81,14 +84,10 @@ Here you can see the distance between where OpenCellID users have scene the towe
 This raises a number of questions. The first obvious one: What reasonable explanation could there be for this tower to be in another location or for my phone to pick it up from such distance? It seems there were hundreds of towers closer then this one my phone could have connected to. Is this just a really high strength actual tower (most of the ones in the casinos are probably more like large routers) or did it move? If this is a malicous device, what companies opperate in the "home location" address of this device?
 
 ###LTS to 3G downgrade attacks
-This was happening all the time especially during my stay in the above listed Augustus Tower. More info to add.
+This was happening all the time especially during my stay in the above listed Augustus Tower. Mainly I would be connected to an LTE network then when I went to complete a call it would immediately downgrade to GSM/3G. This behaivor was very suspicious and combined with other observeed behaivors suggest the existence of malicious devices.
 
 ###Defenses
 will add
-
-###To Do
-* Going to separate all the data sets so we can start to build lists of known good/bad towers. If others in vegas can contribute or on future trips we can confirm permanent (potentially good) devices vs temporary devices.
-* Export all data to a maps api or something
 
 ##Open questions?
 * Is this unique to Defcon and the many security conferences happening that week in vegas or would activities like the drive by captures I experienced still occur regardless of the conferences?
