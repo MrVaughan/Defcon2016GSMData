@@ -19,7 +19,13 @@ In total 51 devices were identified that were not known to OpenCellID during my 
 Before Defcon I made multiple walks of Paris and Bally's to get a baseline list of the available towers in the area.I did make a trip to Blackhat for a day to check out the expo floor. In addition to many walks of the strip and my wife's love of going in all the shops, our company also did a limo tour of the strip and had a nice team dinner at Wynn. Over the course of the week minus some occassions where the app crashed I feel I have pretty reasonable coverage of most of the vegas strip.
 
 ##About IMSI Catchers/Stingrays
-more to add
+* Can intercept 2G, 3G, 4G communication simultaneously as well as CMDA/GSM networks
+* Devices can launch attacks requesting devices connect over weaker channels (2G)
+* Operates in either passive or active mode
+* Passive mode – Simply captures all available traffic in the area
+* Active mode – Acts as a full duplex proxy forcing all traffic through the device then onward to a normal cellular tower
+* Manual Leak - https://theintercept.com/2016/09/12/long-secret-stingray-manuals-detail-how-police-can-spy-on-phones/ 
+
 
 ##Data
 All data is available in the BaseTransceiverStation.csv file.
@@ -84,14 +90,16 @@ Here you can see the distance between where OpenCellID users have scene the towe
 This raises a number of questions. The first obvious one: What reasonable explanation could there be for this tower to be in another location or for my phone to pick it up from such distance? It seems there were hundreds of towers closer then this one my phone could have connected to. Is this just a really high strength actual tower (most of the ones in the casinos are probably more like large routers) or did it move? If this is a malicous device, what companies opperate in the "home location" address of this device?
 
 ###LTS to 3G downgrade attacks
-This was happening all the time especially during my stay in the above listed Augustus Tower. Mainly I would be connected to an LTE network then when I went to complete a call it would immediately downgrade to GSM/3G. This behaivor was very suspicious and combined with other observeed behaivors suggest the existence of malicious devices.
+This was happening all the time especially during my stay in the above listed Augustus Tower.This behaivor was very suspicious and combined with other observeed behaivors suggest the existence of malicious devices.
 
 ###Defenses
-will add
+* Don’t use your device
+* Wi Fi calling with vpn?
+* Signal / OpenWhisper app for calling/SMS, although you would still be tracked
+* If all Wireless Carriers published the tower id’s you could at least know if an id did not match but device spoofing would still be possible
+* Pressure Wireless Carriers to implement mutual authentication between devices
+
 
 ##Open questions?
-* Is this unique to Defcon and the many security conferences happening that week in vegas or would activities like the drive by captures I experienced still occur regardless of the conferences?
-* Wouldn't it be nice if we could tell people defcon was the safest time to use your equipement in vegas thanks to all the hackers of the world?
-* Certainly a burner phone was worth it but what about the thousands of innocent regular people in the area that week?
-* Impact of GPS accuracy?
+* Is this unique to Defcon and the many 
 * Could Towers be rotating or changing device ID's resulting in duplicate entries?
